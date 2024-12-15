@@ -1,0 +1,507 @@
+
+
+body {
+    margin: 0;
+    background-color: #FAF8F5;
+    box-sizing: border-box;
+}
+
+/* 
+====================================
+
+Welcome Section
+
+====================================
+*/ 
+
+.welcome {
+    font-family: "Instrument Sans", sans-serif;
+    background-image: url(../images/welcome/exhibitions.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    position: relative;
+    height: calc(70vh - 100px);
+}
+
+.welcome h1 {
+    color: #F7F4F1;
+    font-size: 80px;
+    text-transform: uppercase;
+    font-weight: 700;
+    position: relative;
+    margin: 0;
+    top: 60%;
+    left: 3%;
+    display: none;
+}
+
+.greetings p {
+    font-family: "Instrument Sans", sans-serif;
+    color: #1B1818;
+    text-align: center;
+    font-size: 30px;
+    line-height: 2;
+    font-weight: 600;
+    padding: 60px;
+    margin: 0;
+    margin-left: -40px;
+    
+}
+
+/* 
+====================================
+
+Exhibitions Display
+
+====================================
+*/ 
+
+.exhibitions-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    box-sizing: border-box;
+    gap: 20px;
+    text-decoration: none;
+    margin-left: -40px;
+}
+
+h2 {
+    display: none;
+}
+
+.exhibitions-grid figure {
+    font-family: "Instrument Sans", sans-serif;
+    text-align: center;
+}
+
+.exhibitions-grid img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.exhibit-card {
+    transition: filter 0.5s ease-in-out;
+}
+
+.exhibit-card:hover {
+    filter: brightness(70%)
+}
+
+a:visited,
+a:link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.exhibitions-grid figcaption {
+    font-family: "Instrument Sans", sans-serif;
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.exhibit-title {
+    font-weight: 700;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* 
+====================================
+
+Footer
+
+====================================
+*/ 
+
+footer {
+    background-color: #010101;
+    min-height: auto;
+    display: block;
+}
+
+.footer-container {
+    font-family: "Instrument Sans", sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "hours location museum-info"
+    "contact follow museum-info";
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px 40px;
+    padding: 20px 45px;
+    align-items: start;
+    margin-left: 30px;
+    margin-top: 70px;
+}
+
+.footer-hours {
+    grid-area: hours;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-museum-info {
+    grid-area: museum-info;
+}
+
+.footer-location {
+    grid-area: location;
+}
+
+.footer-follow {
+    grid-area: follow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer texts */ 
+.footer-hours,
+.footer-contact,
+.footer-location {
+    color: #CCCBD6;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+/* Footer Headings */
+.footer-hours h6,
+.footer-contact h6,
+.footer-location h6  { 
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+.footer-museum-info h6 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -5px;
+    padding-top: 10px;
+}
+
+.footer-follow h6 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* The Museum - Info Links */ 
+.museum-info-links {
+    color: #E6E6E8;
+    font-size: 17px;
+}
+
+.museum-info-links ul li {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    right: 38px;
+    line-height: 2;
+}
+
+.museum-info-links a:visited,
+.museum-info-links a:link,
+.footer-follow a:visited,
+.footer-follow a:link {
+    color: #E6E6E8;
+    text-decoration: none;
+}
+
+.museum-info-links a:hover,
+.footer-follow a:hover {
+    color: #848293;
+    text-decoration: none;
+}
+
+/* Sign up for newsletter link */
+.footer-follow a {
+    color: #E6E6E8;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.footer-follow-icons {
+    display: flex;
+    white-space: nowrap;
+}
+
+.fa-tiktok,
+.fa-instagram,
+.fa-x-twitter {
+    font-size: 20px;
+    color: #E6E6E8;
+    padding: 5px;
+}
+
+
+
+
+/* Large tablets and small laptops */
+@Media (max-width: 1280px) and (min-width: 768px)  {
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+     /* Dropdown Menu */ 
+
+     .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+
+
+    /* Footer */ 
+
+    /* Footer Headings */
+    .footer-hours h3,
+    .footer-contact h3,
+    .footer-location h3,
+    .footer-museum-info h3,
+    .footer-follow h3 {
+        font-size: 16px;
+    }
+
+    /* Footer Texts */ 
+    .footer-hours,
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 14px;
+    }
+}
+
+/* Tablets and large phones */
+@Media (max-width: 768px) and (min-width: 480px) {
+
+    /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+
+    .exhibitions-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .welcome {
+        height: calc(50vh - 90px);
+    }
+
+
+    /* Footer */ 
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+    .footer-follow-icons {
+        justify-content: flex-start;  
+    }
+
+    /* Footer Headings */ 
+    .footer-contact h3,
+    .footer-location h3,
+    .footer-museum-info h3,
+    .footer-follow h3 {
+        font-size: 13px;
+    }
+
+    /* Footer Headings */ 
+    .footer-hours h3,
+    .footer-contact h3,
+    .footer-location h3 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    /* Footer Texts */ 
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 12px;
+    }
+
+    .footer-hours {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+}
+
+/* Media Iphone 14 Pro Max and smaller tablets */ 
+@media (max-width: 480px) {
+
+     /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -7px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+
+    .welcome {
+        height: calc(40vh - 90px);
+    }
+
+    .greetings p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-left: 10px;
+        margin-bottom: -20px;
+    }
+
+    .exhibitions-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Footer */ 
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+
+    .footer-follow-icons {
+        justify-content: flex-start;
+        
+    }
+
+    /* Footer Headings */ 
+    .footer-contact h6,
+    .footer-location h6,
+    .footer-museum-info h6,
+    .footer-follow h6 {
+        font-size: 13px;
+    }
+
+    .footer-hours h6,
+    .footer-contact h6,
+    .footer-location h6 {
+        font-size: 13px;
+    }
+
+    /* Footer Texts */ 
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 12px;
+    }
+
+    .footer-hours {
+        font-size: 10px;
+    }
+}

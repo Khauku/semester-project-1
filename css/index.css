@@ -1,0 +1,834 @@
+
+/* Body*/ 
+
+html, body {
+    margin: 0;
+    background-color: #FAF8F5;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/* 
+====================================
+
+Welcome Section
+
+====================================
+*/  
+
+.welcome {
+    font-family: "Instrument Sans", sans-serif;
+    background-image: url(../images/welcome/welcome.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-position: center;
+    position: relative;
+    height: calc(70vh - 100px);
+}
+
+/* New Exhibition - Heading */ 
+.welcome h1 { 
+    font-size: 50px;
+    text-transform: uppercase;
+    padding-left: 50px;
+    font-weight: 500;
+}
+
+.welcome h1,
+.welcome aside {
+    color: #fff;
+    position: relative;
+    line-height: 50px;
+    margin: 0;
+    top: 65%;
+}
+
+.welcome aside {
+    font-size: 26px;
+    padding-left: 50px;
+    font-weight: 400;
+}
+
+
+
+/* 
+====================================
+
+Main content
+
+====================================
+*/ 
+
+/* Exhibitions & Special Event Heading */ 
+
+h2 { 
+    font-family: "Instrument Sans", sans-serif;
+    text-transform: uppercase;
+    font-size: 35px;
+}
+
+.special-events h2 {
+    padding-left: 50px;
+    margin-bottom: -13px;
+}
+
+
+/* Special Events Image Scroll */
+
+.special-event-scroll-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 10px;
+    gap: 40px;
+    position: relative;
+    max-width: 100%;
+}
+
+.special-event img {
+    width: 480px;
+    height: 547px;  
+    position: relative;
+    margin-left: 8%;
+}
+
+/* Learn More - CTA Buttons */
+
+.cta-learn {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    border: solid 1px #fff;
+    font-size: 16px;
+    position: relative;
+    padding: 8px 15px;
+    bottom: 70px;
+    margin-left: 60px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .cta-learn-tech {
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: transparent;
+    color: #fff;
+    position: relative;
+    border: solid 1px #fff;
+    font-size: 16px;
+    position: relative;
+    padding: 8px 15px;
+    bottom: 80px;
+    margin-left: 80px;  
+    transition: all 0.3s ease-in-out;
+  }
+
+
+.cta-learn:hover,
+.cta-learn-tech:hover {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    font-weight: 600;
+  }
+
+
+/* Exhibitions List */ 
+
+.exhibitions {
+    font-family: "Instrument Sans", sans-serif;
+    margin: 0 auto;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.exhibit {
+    margin: 0;
+    padding: 0;
+
+}
+
+/* Exhibitions titles */
+
+.exhibitions h2 {
+    margin-bottom: 0;
+    margin-left: 30px;
+}
+
+.exhibit-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 70px;
+    box-sizing: border-box;
+    position: relative;
+    left: 2%;
+    
+}
+
+.exhibit-img {
+    transition: filter 0.5s ease-in-out;
+    max-width: 590px;
+    box-sizing: border-box;
+    width: 100%;
+    height: auto;
+    margin: 0;
+    display: block;
+}
+
+
+.exhibit-info h3 {
+    font-size: 25px;
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-top: 3px;
+    margin-bottom: 0;
+   
+}
+
+.exhibit-info aside {
+    font-size: 20px;
+    line-height: 35px;
+    white-space: normal;
+    gap: 10px;
+}
+
+.aside-gap {
+    margin-right: 20px;
+}
+
+.exhibit a {
+    text-decoration: none;
+    display: block;
+    transition: filter 0.5s ease-in-out;
+}
+
+.exhibit .exhibit-img:hover {
+    filter: brightness(70%)
+}
+
+.exhibit a:visited {
+    text-decoration: none;
+    color: #000;
+}
+
+
+/* 
+====================================
+
+Footer
+
+====================================
+*/  
+
+
+/* Exhibitions & Special Event Heading */ 
+footer {
+    background-color: #010101;
+    min-height: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.footer-container {
+    font-family: "Instrument Sans", sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "hours location museum-info"
+    "contact follow museum-info";
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px 40px;
+    padding: 20px 45px;
+    align-items: start;
+    margin-left: 30px;
+}
+
+.footer-hours {
+    grid-area: hours;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-museum-info {
+    grid-area: museum-info;
+}
+
+.footer-location {
+    grid-area: location;
+}
+
+.footer-follow {
+    grid-area: follow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer texts */ 
+.footer-hours,
+.footer-contact,
+.footer-location {
+    color: #CCCBD6;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+/* Footer Headings */
+.footer-hours h4,
+.footer-contact h4,
+.footer-location h4  { 
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+.footer-museum-info h4 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -5px;
+    padding-top: 10px;
+}
+
+.footer-follow h4 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* The Museum - Info Links */ 
+.museum-info-links {
+    color: #E6E6E8;
+    font-size: 17px;
+}
+
+.museum-info-links ul li {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    right: 38px;
+    line-height: 2;
+}
+
+.museum-info-links a:visited,
+.museum-info-links a:link,
+.footer-follow a:visited,
+.footer-follow a:link {
+    color: #E6E6E8;
+    text-decoration: none;
+}
+
+.museum-info-links a:hover,
+.footer-follow a:hover {
+    color: #848293;
+    text-decoration: none;
+}
+
+/* Sign up for newsletter link */
+.footer-follow a {
+    color: #E6E6E8;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.footer-follow-icons {
+    display: flex;
+    white-space: nowrap;
+}
+
+.fa-tiktok,
+.fa-instagram,
+.fa-x-twitter {
+    font-size: 20px;
+    color: #E6E6E8;
+    padding: 5px;
+}
+
+
+/* Large tablets and small laptops */
+@Media (max-width: 1280px) and (min-width: 768px)  {
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+     /* Dropdown Menu */ 
+     .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+
+    .welcome {
+        margin: 0;
+    }
+
+    .welcome h1 {
+        transform: translateY(-30px);
+    }
+
+    .welcome aside {
+        margin-top: -30px;
+    }
+    
+
+    h2 {
+        font-size: 35px;
+    }
+
+    .exhibitions h2 {
+        position: relative;
+        left: 1%;
+    }
+
+
+    .special-event img {
+        width: 480px;
+        height: 547px;
+    }
+
+    .special-event-scroll-container {
+        gap: 3%;
+        overflow-x: auto;
+    }
+
+    /* Learn More - CTA Buttons */ 
+    .cta-learn,
+    .cta-learn-tech {
+        font-size: 15px; 
+        bottom: 70px;
+    }
+
+    /* Exhibitions */ 
+
+    .exhibit-info h3 {
+        position: relative;
+        font-size: 18px;
+        left: 4%;
+    }
+
+    .exhibit-info aside {
+        font-size: 19px;
+        position: relative;
+        left: 4%;
+    }
+
+    .exhibitions .exhibit-container {
+        overflow-x: auto;
+        box-sizing: border-box;
+    }
+
+    .exhibit-img {
+        padding: 30px;
+    }
+
+    .exhibit-img {
+        width: 100%;
+        padding: 20px;
+    }
+
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+
+    /* Footer Headings */
+    .footer-hours h4,
+    .footer-contact h4,
+    .footer-location h4,
+    .footer-museum-info h4,
+    .footer-follow h4 {
+        font-size: 16px;
+    }
+
+    /* Footer Texts */ 
+    .footer-hours,
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 14px;
+    }
+
+}
+
+/* Tablets and large phones */
+@Media (max-width: 768px) and (min-width: 480px) {
+
+    /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+
+    .welcome {
+        height: calc(50vh - 90px);
+    }
+
+    .welcome h1 {
+        font-size: 40px;
+    }
+
+    .welcome aside {
+        font-size: 20px;
+        margin-top: -15px;
+    }
+
+    .welcome h1,
+    .welcome aside {
+        position: relative;
+        top: 100px;
+        margin-right: 2%;
+    }
+
+    /* Special Events Headings */
+    h2 {
+        font-size: 25px;
+    }
+
+    .special-event img {
+        width: 440px;
+        height: 501px; 
+    }
+
+    .special-events h2 {
+        position: relative;
+        margin-right: 1%;
+    }
+
+    .exhibitions h2 {
+        position: relative;
+        right: 3%;
+    }
+
+    /* Learn More - CTA Buttons */
+    .cta-learn {
+        font-size: 15px; 
+        position: relative;
+        margin-right: 0;
+        margin-bottom: 10%;
+    }
+
+    .cta-learn-tech {
+        font-size: 15px; 
+        position: relative;
+        margin-right: -10px;
+        margin-bottom: 10%;
+    }
+
+    /* Exhibitions */ 
+    .exhibit-container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .exhibitions h3 {
+        font-size: 20px;
+    }
+
+    .exhibit aside {
+        font-size: 19px;
+    }
+
+    /* Footer */ 
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+
+    .footer-follow-icons {
+        justify-content: flex-start;
+        
+    }
+
+    /* Footer Headings */ 
+    .footer-contact h4,
+    .footer-location h4,
+    .footer-museum-info h4,
+    .footer-follow h4 {
+        font-size: 13px;
+    }
+
+    /* Footer Headings */ 
+    .footer-hours h4,
+    .footer-contact h4,
+    .footer-location h4 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    /* Footer Texts */ 
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 12px;
+    }
+
+    .footer-hours {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+}
+
+/* Media Iphone 14 Pro Max and smaller tablets */ 
+@media (max-width: 480px) {
+
+    body {
+        margin: 0;
+        overflow-x: hidden;
+        padding: 0;
+    }
+
+     /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -7px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+
+    /* Welcome */
+    .welcome {
+        height: calc(40vh - 90px);
+    }
+
+    .welcome h1 {
+        font-size: 30px;
+        line-height: 1.2;
+    }
+
+    .welcome aside {
+        font-size: 15px;
+        margin-top: -15px;
+    }
+
+    .welcome h1,
+    .welcome aside {
+        position: relative;
+        top: 140px;
+    }
+
+    h2 {
+        font-size: 25px;
+    }
+
+    /* Special Events */
+    .special-event img {
+        width: 320px;
+        height: 380px; 
+    }
+
+    .special-event-scroll-container {
+    gap: 20px;
+    margin-bottom: 20px;
+    }
+
+
+    /* Learn More CTA Buttons */
+    .cta-learn {
+        font-size: 10px;
+        position: relative; 
+        margin-top: 20px;
+        margin-left: 40px;
+    }
+
+    .cta-learn-tech {
+        font-size: 10px;
+        position: relative; 
+        margin-top: 30px;
+        margin-left: 50px;
+    }
+
+    /* Exhibitions */ 
+    .exhibit-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        box-sizing: border-box;
+        max-width: 570px;
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        margin-top: -30px;
+    }
+
+    .exhibitions h2 { /* Exhibitons title */
+        position: relative;
+        right: 20px;
+        bottom: 40px;
+    }
+
+    .exhibit h3 {
+        font-size:  18px;
+        margin: 10px 0;
+    }
+
+    .exhibit aside {
+        font-size: 15px;
+    }
+
+
+/* Footer */ 
+
+.footer-container {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/* Social Media Icons */ 
+.fa-tiktok,
+.fa-instagram,
+.fa-x-twitter {
+    font-size: 15px;
+}
+
+
+.footer-follow-icons {
+    justify-content: flex-start;
+    
+}
+
+/* Footer Headings */ 
+.footer-contact h4,
+.footer-location h4,
+.footer-museum-info h4,
+.footer-follow h4 {
+    font-size: 13px;
+}
+
+.footer-hours h4,
+.footer-contact h4,
+.footer-location h4 {
+    font-size: 13px;
+}
+
+/* Footer Texts */ 
+.footer-contact,
+.footer-location,
+.museum-info-links li,
+.footer-follow a {
+    font-size: 12px;
+}
+
+.footer-contact, 
+.footer-follow , 
+.footer-follow-icons {
+    margin-top: -20px;
+}
+
+.footer-hours p {
+    font-size: 10px;
+}
+
+.footer-hours h4 {
+    white-space: nowrap;
+    margin-bottom: 2px;
+}
+
+.footer-museum-info {
+    margin-top: -5px;
+}
+}
