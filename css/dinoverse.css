@@ -5,14 +5,16 @@ body {
     overflow-x: hidden;
 }
 
-/* 
-====================================
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow-x: hidden;
+    border: 0;
+    font-size: 1rem;
+}
 
-Welcome Section
-
-====================================
-*/ 
-
+/* Welcome section */
 .welcome {
     background-image: url(../images/welcome/dinoverse.jpg);
     background-size: cover;

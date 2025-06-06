@@ -15,10 +15,8 @@
 <body>
 <!---Community Science Museum Logo - Menu-->
 <header>
-    <a href="index.html">
-        <img src="images/logo.jpg" alt="Logo" class="logo">
-    </a>
-    <nav class="menu">
+    <a href="index.html"><img src="images/logo.jpg" alt="Community Science Museum logo" class="logo"></a>
+    <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="exhibitions.html">Exhibitions</a></li>
@@ -26,17 +24,15 @@
             <li><a href="visit.html">Buy tickets</a></li>
         </ul>
     </nav>
-    <div class="search-bar-position">
+    <div class="search-bar-position" role="search" aria-label="search the site">
         <input type="text" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
-    <nav class="dropdown-section">
+    <nav class="dropdown-section" aria-label="Mobile menu">
         <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
         <label for="menu-toggle" class="dropdown-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
             <li><a href="visit.html">Visit</a></li>
@@ -60,39 +56,39 @@
         <ul class="exhibitions-grid">
             <li>
                 <figure class="exhibit-card">
-                    <img src="images/exhibitions-2/exhibit-1.jpg" alt="Radiant Wonders">
+                    <img src="images/exhibitions-2/exhibit-1.jpg" alt="Radiant Wonders - World of light and color">
                     <figcaption><span class="exhibit-title">Radiant Wonders:</span> World of light and color</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="exhibit-card">
-                    <img src="images/exhibitions-2/exhibit-2.jpg" alt="Virtual Canvas">
+                    <img src="images/exhibitions-2/exhibit-2.jpg" alt="Virtual Canvas - Painting in the Digital Realm">
                     <figcaption><span class="exhibit-title">Virtual Canvas:</span> Painting in the Digital Realm</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="exhibit-card">
-                    <img src="images/exhibitions-2/exhibit-3.jpg" alt="Power Play">
+                    <img src="images/exhibitions-2/exhibit-3.jpg" alt="Power Play - The Science of Energy">
                     <figcaption><span class="exhibit-title">Power Play:</span> The Science of Energy</figcaption>
                 </figure>
             </li>
             <li>
                 <figure class="exhibit-card">
-                    <img src="images/exhibitions-2/exhibit-4.jpg" alt="Luminous Motion">
+                    <img src="images/exhibitions-2/exhibit-4.jpg" alt="Luminous Motion - The Science of Light and Energy">
                     <figcaption><span class="exhibit-title">Luminous Motion:</span> The Science of Light and Energy</figcaption>
                 </figure>
             </li>
             <li>
                 <a href="dinoverse.html">
                   <figure class="exhibit-card">
-                      <img src="images/exhibitions-2/exhibit-5.jpg" alt="DinoVerse">
-                      <figcaption><span class="exhibit-title">DinoVerse:</span> Bringing Dinosaurs to Life</figcaption>
+                      <img src="images/exhibitions-2/exhibit-5.jpg" alt="DinoVerse - Bringing Dinosaurs to Life">
+                      <figcaption><span class="exhibit-title">DinoVerse:</span>Bringing Dinosaurs to Life</figcaption>
                   </figure>
                 </a>  
             </li>
             <li>
                 <figure class="exhibit-card">
-                    <img src="images/exhibitions-2/exhibit-6.jpg" alt="Echoes of Innovation">
+                    <img src="images/exhibitions-2/exhibit-6.jpg" alt="Echoes of Innovation - Revisit History">
                     <figcaption><span class="exhibit-title">Echoes of Innovation:</span>Revisit History</figcaption>
                 </figure>
             </li>
@@ -103,16 +99,19 @@
 <footer>
     <section class="footer-container">
         <div class="footer-hours">
-            <h3>Opening Hours</h3>
-            <p>Tuesday : Thursday 10:00 - 18.00<br>Friday : Saturday 09:00 - 20.00<br>Sunday: 09:00- 14:00</p>
+            <h4>Opening Hours</h4>
+            <p>
+                Tuesday : Thursday 10:00 - 18.00<br>
+                Friday : Saturday 09:00 - 20.00<br>
+                Sunday: 09:00- 14:00</p>
         </div>
         <div class="footer-contact">
-            <h3>Contact</h3>
+            <h4>Contact</h4>
             <p>CSM@info.com<br>Phone: +45 232 00 000</p>
         </div>
         <div class="footer-museum-info">
-            <h3>The Museum</h3>
-            <nav class="museum-info-links">
+            <h4>The Museum</h4>
+            <nav class="museum-info-links" aria-label="Museum Information">
                 <ul>
                     <li><a href="index.html">Vacancies</a></li>
                     <li><a href="index.html">Annual Reports</a></li>
@@ -125,19 +124,19 @@
             </nav>
         </div>
         <div class="footer-location">
-            <h3>Location</h3>
+            <h4>Location</h4>
             <p>Comunity Science Museum<br>Himmelveien 20<br>0512 Oslo</p>
         </div>
-        <div class="footer-follow">
-            <h3>Follow us:</h3>
+        <nav class="footer-follow" aria-label="follow us section">
+            <h4>Follow us:</h4>
             <a href="index.html">Sign up for newsletters</a>
-            <div class="footer-follow-icons">
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-            </div>
-        </div>
+            <ul class="footer-follow-icons">
+                <li><a href="#" aria-label="Follow us on TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </nav>
     </section>
-</footer> 
+</footer>
 </body>
 </html>

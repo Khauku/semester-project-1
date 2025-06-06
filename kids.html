@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadata-->
     <title>Kids / School trips | Explore, Learn and Play at the Community Science Museum</title>
     <meta name="description" content="Plan and unforgettable school trip or kids day at the Community Science Museum! explore interactive exhibits, activities and engaging workshops. Learn, play and discvover">
-    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--Preconnect Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <!--Google Fonts: Inter & Koulen-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--Stylesheets-->
     <link href="css/header.css" rel="stylesheet">
     <link href="css/kids.css" rel="stylesheet">
 </head>
 <body>
 <!---Community Science Museum Logo - Menu-->
 <header>
-    <a href="index.html">
-        <img src="images/logo.jpg" alt="Logo" class="logo">
-    </a>
-    <nav class="menu">
+    <a href="index.html"><img src="images/logo.jpg" alt="Community Science Museum logo" class="logo"></a>
+    <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="exhibitions.html">Exhibitions</a></li>
@@ -26,17 +29,15 @@
             <li><a href="visit.html">Buy tickets</a></li>
         </ul>
     </nav>
-    <div class="search-bar-position">
+    <div class="search-bar-position" role="search" aria-label="search the site">
         <input type="text" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
-    <nav class="dropdown-section">
+    <nav class="dropdown-section" aria-label="Mobile menu">
         <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
         <label for="menu-toggle" class="dropdown-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+            <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
             <li><a href="visit.html">Visit</a></li>
@@ -51,7 +52,7 @@
     <section class="welcome">
         <h1>Kids / School Trips</h1>
     </section>
-<!--Plan Class Trip-->
+    <!--Plan Class Trip-->
     <section class="grid-box">
         <div class="welcome-content">
             <h2>Plan Your Class Trip to the <span class="welcome-title-highlight">Science Museum</span></h2>
@@ -59,7 +60,7 @@
                 At the Science Museum, we're passionate about inspiring curiosity and bringing science to life for students of all ages. A visit to our museum is an unforgettable experience that combines fun, exploration, and hands-on learning. Interactive exhibits and captivating demonstrations to immersive workshops and technology.
             </p>
         </div>
-<!--Sidebar - CTA & Info-->
+        <!--Sidebar - CTA & Info-->
         <section class="column">
             <div class="column-list">
                 <button class="cta">Book now</button>
@@ -77,7 +78,7 @@
                 </p>
             </div>
         </section>
-<!--Class trip Program-->
+       <!--Class trip Program-->
         <section class="program-cards">
             <h3>Program</h3>
             <article class="card">
@@ -99,43 +100,35 @@
                     </p>
             </article>
         </section> 
-<!--Experiments image scroll-->     
+        <!--Experiments image scroll-->     
         <section class="experiments">
             <h5>Classroom experiments</h5>
-            <p>
-                Science experiments in the classroom
-            </p>
-            <p>
-                For children between 8-13 years old
-            </p>
+            <p>Science experiments in the classroom</p>
+            <p>For children between 8-13 years old</p>
             <div class="experiment-scroll-container">
                 <div class="experiment">
-                    <img src="images/kids/experiment-1.jpg" alt="Bath Bomb Bonanza">
+                    <img src="images/kids/experiment-1.jpg" alt="Bath Bomb Bonanza experiment for kids">
                     <button class="cta-learn">Learn more</button>
                 </div>
                 <div class="experiment">
-                    <img src="images/kids/experiment-2.jpg" alt="Taste The Rainbow">
+                    <img src="images/kids/experiment-2.jpg" alt="Taste The Rainbow experiment for kids">
                     <button class="cta-learn">Learn more</button>
                 </div>
                 <div class="experiment">
-                    <img src="images/kids/experiment-3.jpg" alt="Magical Reactions">
+                    <img src="images/kids/experiment-3.jpg" alt="Magical Reactions experiment for kids">
                     <button class="cta-learn">Learn more</button>
                 </div>
                 <div class="experiment">
-                    <img src="images/kids/experiment-4.jpg" alt="Nature's Palette">
+                    <img src="images/kids/experiment-4.jpg" alt="Nature's Palette experiment for kids">
                     <button class="cta-learn">Learn more</button>
                 </div> 
             </div>        
         </section>
-<!--Final Note-->
+        <!--Final Note-->
         <section class="final-note">
             <h5>Practical information</h5>
-            <p>
-                We offer a variety of pre-planned trips designed to maximize learning and engagement for students.<br>Each trip includes interactive exhibits, hands-on activities, and opportunities to explore science in exciting ways.<br>Trips are available on weekdays, with flexible timings and options for group sizes. Teachers can access<br>tailored resources to enhance the visit and make planning a breeze.
-            </p>
-            <p>
-                <span class="ready-to-book">Ready to book? Contact us to discuss availability and customization<br>options for your group!</span>
-            </p>
+            <p>We offer a variety of pre-planned trips designed to maximize learning and engagement for students.<br>Each trip includes interactive exhibits, hands-on activities, and opportunities to explore science in exciting ways.<br>Trips are available on weekdays, with flexible timings and options for group sizes. Teachers can access<br>tailored resources to enhance the visit and make planning a breeze.</p>
+            <p><span class="ready-to-book">Ready to book? Contact us to discuss availability and customization<br>options for your group!</span></p>
         </section>
     </section>
 </main> 
@@ -144,11 +137,15 @@
     <section class="footer-container">
         <div class="footer-hours">
             <h6>Opening Hours</h6>
-            <p>Tuesday : Thursday 10:00 - 18.00<br>Friday : Saturday 09:00 - 20.00<br>Sunday: 09:00- 14:00</p>
+            <p>
+                Tuesday : Thursday 10:00 - 18.00<br>Friday : Saturday 09:00 - 20.00<br>Sunday: 09:00- 14:00
+            </p>
         </div>
         <div class="footer-contact">
             <h6>Contact</h6>
-            <p>CSM@info.com<br>Phone: +45 232 00 000</p>
+            <p>
+                CSM@info.com<br>Phone: +45 232 00 000
+            </p>
         </div>
         <div class="footer-museum-info">
             <h6>The Museum</h6>

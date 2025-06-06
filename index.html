@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Explore the Community Science Museum for Exhibitions, family friendly activities and a fun educational experience awaits">
+    <!--Metadata-->
     <title>Community Science Museum | Discover Exhibitions & Book tickets</title>
-    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <meta name="description" content="Explore the Community Science Museum for Exhibitions, family friendly activities and a fun educational experience awaits">
+    <!--Preconnect Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Google Fonts: Inter & Koulen-->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--Stylesheets-->
     <link href="css/header.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
@@ -17,9 +21,9 @@
 <!---Community Science Museum Logo - Menu-->
 <header>
     <a href="index.html">
-        <img src="images/logo.jpg" alt="Logo" class="logo">
+        <img src="images/logo.jpg" alt="Community Science Museum logo" class="logo">
     </a>
-    <nav class="menu">
+    <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="visit.html">Visit</a></li>
             <li><a href="exhibitions.html">Exhibitions</a></li>
@@ -27,12 +31,12 @@
             <li><a href="visit.html">Buy tickets</a></li>
         </ul>
     </nav>
-    <div class="search-bar-position">
+    <div class="search-bar-position" role="search" aria-label="search the site">
         <input type="text" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
-<!--Dropdown menu for smaller sizes-->
-    <nav class="dropdown-section">
+    <!--Dropdown menu for smaller sizes-->
+    <nav class="dropdown-section" aria-label="Mobile menu">
         <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
         <label for="menu-toggle" class="dropdown-menu-icon">
             <span></span>
@@ -76,35 +80,35 @@
             </div> 
         </div>        
     </section>
-<!--Exhibitions-->    
+    <!--Exhibitions-->    
     <section class="exhibitions">
         <h2>Exhibitions</h2>
-         <div class="exhibit-container">
-            <div class="exhibit">
+        <div class="exhibit-container">
+            <article class="exhibit">
                 <a href="exhibitions.html">
-                  <img src="images/exhibitions-1/exhibit-canvas.jpg" alt="Virtual Canvas" class="exhibit-img">
+                  <img src="images/exhibitions-1/exhibit-canvas.jpg" alt="Virtual Canvas exhibition - Painting in Digital Realm" class="exhibit-img">
                     <div class="exhibit-info">
                       <h3>Virtual Canvas:<br>Painting in Digital Realm</h3>
                        <aside class="exhibit-details>">
                           <span class="aside-gap">• Suitable for Teenagers</span> • Thursday's 15:00 - 18:00
                        </aside>
                     </div>
-                </a>    
-            </div>
-            <div class="exhibit">
+                </a> 
+            </article>
+            <article class="exhibit">
                 <a href="exhibitions.html">
-                  <img src="images/exhibitions-1/exhibit-luminous.jpg" alt="Luminous Motion" class="exhibit-img">
+                  <img src="images/exhibitions-1/exhibit-luminous.jpg" alt="Luminous Motion - The science of Light and Energy" class="exhibit-img">
                     <div class="exhibit-info">
                       <h3>Luminous Motion:<br>The science of Light and Energy</h3>
                         <aside>
                           <span class="aside-gap">• Suitable for Everyone</span>  • Friday - Saturday 15:00 - 18:00
                         </aside>
                     </div>
-                </a>    
-            </div>
-            <div class="exhibit">
+                </a> 
+            </article>   
+            <article class="exhibit">
               <a href="dinoverse.html">
-                 <img src="images/exhibitions-1/exhibit-dinoverse.jpg" alt="DinoVerse" class="exhibit-img">
+                 <img src="images/exhibitions-1/exhibit-dinoverse.jpg" alt="DinoVerse - Bringing Dinosaurs to Life" class="exhibit-img">
                    <div class="exhibit-info">
                     <h3>DinoVerse:<br>Bringing Dinosaurs to Life</h3>
                      <aside>
@@ -112,10 +116,10 @@
                     </aside>
                   </div>
               </a>
-            </div>
-            <div class="exhibit">
+            </article>
+            <article class="exhibit">
                 <a href="exhibitions.html">
-                  <img src="images/exhibitions-1/exhibit-echoes.jpg" alt="Echos of Innovation" class="exhibit-img">
+                  <img src="images/exhibitions-1/exhibit-echoes.jpg" alt="Echos of Innovation - Revisit History" class="exhibit-img">
                    <div class="exhibit-info">
                       <h3>Echoes of Innovation:<br>Revisit History</h3>
                         <aside>
@@ -123,7 +127,7 @@
                         </aside>
                     </div>
                 </a>
-            </div> 
+            </article> 
         </div>
     </section>
 </main>
@@ -132,7 +136,10 @@
     <section class="footer-container">
         <div class="footer-hours">
             <h4>Opening Hours</h4>
-            <p>Tuesday : Thursday 10:00 - 18.00<br>Friday : Saturday 09:00 - 20.00<br>Sunday: 09:00- 14:00</p>
+            <p>
+                Tuesday : Thursday 10:00 - 18.00<br>
+                Friday : Saturday 09:00 - 20.00<br>
+                Sunday: 09:00- 14:00</p>
         </div>
         <div class="footer-contact">
             <h4>Contact</h4>
@@ -140,7 +147,7 @@
         </div>
         <div class="footer-museum-info">
             <h4>The Museum</h4>
-            <nav class="museum-info-links">
+            <nav class="museum-info-links" aria-label="Museum Information">
                 <ul>
                     <li><a href="index.html">Vacancies</a></li>
                     <li><a href="index.html">Annual Reports</a></li>
@@ -156,15 +163,15 @@
             <h4>Location</h4>
             <p>Comunity Science Museum<br>Himmelveien 20<br>0512 Oslo</p>
         </div>
-        <div class="footer-follow">
+        <nav class="footer-follow" aria-label="follow us section">
             <h4>Follow us:</h4>
             <a href="index.html">Sign up for newsletters</a>
-            <div class="footer-follow-icons">
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-            </div>
-        </div>
+            <ul class="footer-follow-icons">
+                <li><a href="#" aria-label="Follow us on TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </nav>
     </section>
 </footer>   
 </body>
