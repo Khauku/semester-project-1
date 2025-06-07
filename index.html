@@ -14,11 +14,10 @@
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
     <!--Stylesheets-->
-    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/index.css" rel="stylesheet">
 </head>
 <body>
-<!---Community Science Museum Logo - Menu-->
 <header>
     <a href="index.html">
         <img src="images/logo.jpg" alt="Community Science Museum logo" class="logo">
@@ -32,16 +31,15 @@
         </ul>
     </nav>
     <div class="search-bar-position" role="search" aria-label="search the site">
-        <input type="text" class="search-bar" placeholder="Search">
+        <label for="site-search" class="visually-hidden">Search the site</label>
+        <input type="text" id="site-search" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
     <nav class="dropdown-section" aria-label="Mobile menu">
-        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
-        <label for="menu-toggle" class="dropdown-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle" aria-controls="dropdown-menu" aria-expanded="false">
+        <label for="menu-toggle" class="dropdown-menu-icon" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
             <li><a href="visit.html">Visit</a></li>
@@ -55,43 +53,61 @@
 <!--Welcome Image & Welcome Text-->
 <main>
     <section class="welcome">
+        <div class="welcome-text">
             <h1>Discover our new exhibition</h1>
-            <aside>Luminous Motion: The Science of Light and Energy</aside> 
+            <p>Luminous Motion: The Science of Light and Energy</p> 
+        </div>
     </section>
-<!--Special Events Scroll-->    
+    <!--Special Events Scroll-->   
     <section class="special-events">
-        <h2>Special Events</h2>
+        <h2 class="section-heading">Special Events</h2>
          <div class="special-event-scroll-container">
-            <div class="special-event">
+            <article class="special-event">
                 <img src="images/special-events/special-event-1.jpg" alt="Robotics & AI Showcase">
+                <div class="event-content">
+                    <h3>Robotics and AI Showcase</h3>
+                    <p>Dive into the future of technology! Explore robotics and meet Rob the Robot for a handshake.</p>
                   <button class="cta-learn">Learn more</button>
-            </div>
-            <div class="special-event">
+                </div>
+            </article>
+            <article class="special-event">
                 <img src="images/special-events/special-event-2.jpg" alt="Night in Museum">
-                  <button class="cta-learn">Learn more</button>
-            </div>
-            <div class="special-event">
+                <div class="event-content">
+                    <h3>Night in the Museum</h3>
+                    <p>Get your family together for an exiting night at the Museum, as you sleep over beside dinosaurs.</p>
+                    <button class="cta-learn">Learn more</button>
+                </div>
+            </article>
+            <article class="special-event">
                 <img src="images/special-events/special-event-3.jpg" alt="Tomorrow's Technology Today">
-                  <button class="cta-learn-tech">Learn more</button>
-            </div>
-            <div class="special-event">
+                <div class="event-content">
+                    <h3>Tomorrow's Technology Today</h3>
+                    <p>Pilot a Mars rover, program an AI, or simulate a smaty city FutureSim. Discover endless posibilities!</p>
+                    <button class="cta-learn">Learn more</button>
+                </div>
+            </article>
+            <article class="special-event">
                 <img src="images/special-events/special-event-4.jpg" alt="Energetica Exhibition on Loan">
-                  <button class="cta-learn">Learn more</button>      
-            </div> 
+                <div class="event-content">
+                    <h3>Energetica Exhibition on Loan</h3>
+                    <p>On loand from NEMO Science Museum, Energetica lets you explore the power of the elements!</p>
+                    <button class="cta-learn">Learn more</button> 
+                </div>     
+            </article> 
         </div>        
     </section>
     <!--Exhibitions-->    
     <section class="exhibitions">
-        <h2>Exhibitions</h2>
+        <h2 class="section-heading">Exhibitions</h2>
         <div class="exhibit-container">
             <article class="exhibit">
                 <a href="exhibitions.html">
                   <img src="images/exhibitions-1/exhibit-canvas.jpg" alt="Virtual Canvas exhibition - Painting in Digital Realm" class="exhibit-img">
                     <div class="exhibit-info">
                       <h3>Virtual Canvas:<br>Painting in Digital Realm</h3>
-                       <aside class="exhibit-details>">
-                          <span class="aside-gap">• Suitable for Teenagers</span> • Thursday's 15:00 - 18:00
-                       </aside>
+                       <div class="exhibit-details>">
+                          <p>• Suitable for Teenagers • Thursday's 15:00 - 18:00</p>
+                       </div>
                     </div>
                 </a> 
             </article>
@@ -100,9 +116,9 @@
                   <img src="images/exhibitions-1/exhibit-luminous.jpg" alt="Luminous Motion - The science of Light and Energy" class="exhibit-img">
                     <div class="exhibit-info">
                       <h3>Luminous Motion:<br>The science of Light and Energy</h3>
-                        <aside>
-                          <span class="aside-gap">• Suitable for Everyone</span>  • Friday - Saturday 15:00 - 18:00
-                        </aside>
+                        <div class="exhibit-details">
+                          <p>• Suitable for Everyone  • Friday - Saturday 15:00 - 18:00</p>
+                        </div>
                     </div>
                 </a> 
             </article>   
@@ -111,9 +127,9 @@
                  <img src="images/exhibitions-1/exhibit-dinoverse.jpg" alt="DinoVerse - Bringing Dinosaurs to Life" class="exhibit-img">
                    <div class="exhibit-info">
                     <h3>DinoVerse:<br>Bringing Dinosaurs to Life</h3>
-                     <aside>
-                        <span class="aside-gap">• Suitable for Everyone</span> • Drop in
-                    </aside>
+                     <div class="exhibit-details">
+                        <p>• Suitable for Everyone • Drop in</p>
+                     </div>
                   </div>
               </a>
             </article>
@@ -122,9 +138,9 @@
                   <img src="images/exhibitions-1/exhibit-echoes.jpg" alt="Echos of Innovation - Revisit History" class="exhibit-img">
                    <div class="exhibit-info">
                       <h3>Echoes of Innovation:<br>Revisit History</h3>
-                        <aside>
-                          <span class="aside-gap">• Suitable for Everyone</span> • Drop in  
-                        </aside>
+                        <div class="exhibit-details">
+                          <p>• Suitable for Everyone • Drop in</p> 
+                        </div>
                     </div>
                 </a>
             </article> 
@@ -139,7 +155,8 @@
             <p>
                 Tuesday : Thursday 10:00 - 18.00<br>
                 Friday : Saturday 09:00 - 20.00<br>
-                Sunday: 09:00- 14:00</p>
+                Sunday: 09:00- 14:00
+            </p>
         </div>
         <div class="footer-contact">
             <h4>Contact</h4>
@@ -173,6 +190,7 @@
             </ul>
         </nav>
     </section>
-</footer>   
+</footer>
+<script src="/js/menu.js"></script>   
 </body>
 </html>

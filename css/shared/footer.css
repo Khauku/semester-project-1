@@ -1,0 +1,232 @@
+footer {
+    background-color: #010101;
+    min-height: auto;
+    display: block;
+    margin-top: 70px;
+}
+
+.footer-container {
+    font-family: "Instrument Sans", sans-serif;
+    display: grid;
+    grid-template-areas: 
+    "hours location museum-info"
+    "contact follow museum-info";
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px 40px;
+    padding: 20px 45px;
+    align-items: start;
+    margin-left: 30px;
+}
+
+.footer-hours {
+    grid-area: hours;
+}
+
+.footer-contact {
+    grid-area: contact;
+}
+
+.footer-museum-info {
+    grid-area: museum-info;
+}
+
+.footer-location {
+    grid-area: location;
+}
+
+.footer-follow {
+    grid-area: follow;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Footer texts */ 
+.footer-hours,
+.footer-contact,
+.footer-location {
+    color: #CCCBD6;
+    font-size: 17px;
+    line-height: 2;
+    font-weight: 100;
+}
+
+/* Footer Headings */
+.footer-hours h4,
+.footer-contact h4,
+.footer-location h4  { 
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -15px;
+}
+
+.footer-museum-info h4 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: -5px;
+    padding-top: 10px;
+}
+
+.footer-follow h4 {
+    color: #E6E6E8;
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+/* The Museum - Info Links */ 
+.museum-info-links {
+    color: #E6E6E8;
+    font-size: 17px;
+}
+
+.museum-info-links ul li {
+    text-decoration: none;
+    list-style: none;
+    position: relative;
+    right: 38px;
+    line-height: 2;
+}
+
+.museum-info-links a:visited,
+.museum-info-links a:link,
+.footer-follow a:visited,
+.footer-follow a:link {
+    color: #E6E6E8;
+    text-decoration: none;
+}
+
+.museum-info-links a:hover,
+.footer-follow a:hover {
+    color: #848293;
+    text-decoration: none;
+}
+
+/* Sign up for newsletter link */
+.footer-follow a {
+    color: #E6E6E8;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Social Media Icons */
+.footer-follow-icons {
+    display: flex;
+    white-space: nowrap;
+    margin-left: -3rem;
+}
+
+.fa-tiktok,
+.fa-instagram,
+.fa-x-twitter {
+    font-size: 20px;
+    color: #E6E6E8;
+    padding: 5px;
+}
+
+/* Tablets and large phones */
+@Media (max-width: 768px) and (min-width: 480px) {
+    /* Footer */ 
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+    }
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+    .footer-follow-icons {
+        justify-content: flex-start;  
+    }
+
+    /* Footer Headings */ 
+    .footer-contact h4,
+    .footer-location h4,
+    .footer-museum-info h4,
+    .footer-follow h6 {
+        font-size: 13px;
+    }
+
+    /* Footer Headings */ 
+    .footer-hours h4,
+    .footer-contact h4,
+    .footer-location h4 {
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    /* Footer Texts */ 
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 12px;
+    }
+
+    .footer-hours {
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+}
+
+/* Media Iphone 14 Pro Max and smaller tablets */ 
+@media (max-width: 480px) {
+    .footer-container {
+        grid-template-columns: 1fr;
+        grid-auto-rows: auto;
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 0 10px;
+        box-sizing: border-box;
+    }
+
+    /* Social Media Icons */ 
+    .fa-tiktok,
+    .fa-instagram,
+    .fa-x-twitter {
+        font-size: 15px;
+    }
+
+
+    .footer-follow-icons {
+        margin-left: -3rem;
+        
+    }
+
+    /* Footer Headings */ 
+    .footer-contact h4,
+    .footer-location h4,
+    .footer-museum-info h4,
+    .footer-follow h4,
+    .footer-hours h4  {
+        font-size: 13px;
+    }
+
+    /* Footer Texts */ 
+    .footer-contact,
+    .footer-location,
+    .museum-info-links li,
+    .footer-follow a {
+        font-size: 12px;
+    }
+
+    .footer-contact, 
+    .footer-follow , 
+    .footer-follow-icons {
+        margin-top: -20px;
+    }
+
+    .footer-hours {
+        font-size: 10px;
+    }
+}

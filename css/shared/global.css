@@ -1,0 +1,24 @@
+body {
+    font-family: "Instrument Sans", sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow-x: hidden;
+    border: 0;
+    font-size: 1rem;
+}
+
+.container {
+    max-width: clamp(1270px, 100vw, 1300px);
+    width: 100%;
+    box-sizing: border-box;
+    padding-inline: 3rem;
+    margin-inline: auto;
+}

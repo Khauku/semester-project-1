@@ -3,19 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metadata-->
     <title>Exhibitions | Discover interavtive and educational exhibits</title>
     <meta name="description" content="Explore the exiting exhibitions at the Community Science Museum, from hands-on experiments to exiting activities, discover science, technology and history, for all ages.">
-    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
+    <!--Font Awesome Icons-->
+    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--stylesheets-->
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/exhibitions.css" rel="stylesheet">
 </head>
 <body>
-<!---Community Science Museum Logo - Menu-->
 <header>
-    <a href="index.html"><img src="images/logo.jpg" alt="Community Science Museum logo" class="logo"></a>
+    <a href="index.html">
+        <img src="images/logo.jpg" alt="Community Science Museum logo" class="logo">
+    </a>
     <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="visit.html">Visit</a></li>
@@ -25,13 +30,14 @@
         </ul>
     </nav>
     <div class="search-bar-position" role="search" aria-label="search the site">
-        <input type="text" class="search-bar" placeholder="Search">
+        <label for="site-search" class="visually-hidden">Search the site</label>
+        <input type="text" id="site-search" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
     <nav class="dropdown-section" aria-label="Mobile menu">
-        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
-        <label for="menu-toggle" class="dropdown-menu-icon">
+        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle" aria-controls="dropdown-menu" aria-expanded="false">
+        <label for="menu-toggle" class="dropdown-menu-icon" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
@@ -44,55 +50,54 @@
     </nav>
 </header> 
 <main>
-    <section class="welcome">
-        <h1>Exhibitions</h1>  
-    </section>
-    <div class="greetings">
-       <p>Discover the wonders of science through our interactive and inspiring exhibitions!
-        Whether you're exploring the mysteries of the universe or diving into the marvels of everyday science, there's something here for adventurers of all ages</p>
-    </div>
     <section class="exhibition-list">
-        <h2>List of Exhibitions</h2>
-        <ul class="exhibitions-grid">
-            <li>
+        <h1 id="exhibitions-heading" class="visually-hidden">Exhibitions</h1> 
+        <div class="exhibitions-grid">
+            <article>
+                <h2 class="visually-hidden">Radiant Wonders</h2>
                 <figure class="exhibit-card">
                     <img src="images/exhibitions-2/exhibit-1.jpg" alt="Radiant Wonders - World of light and color">
                     <figcaption><span class="exhibit-title">Radiant Wonders:</span> World of light and color</figcaption>
                 </figure>
-            </li>
-            <li>
+            </article>
+            <article>
+                <h2 class="visually-hidden">Virtual Canvas</h2>
                 <figure class="exhibit-card">
                     <img src="images/exhibitions-2/exhibit-2.jpg" alt="Virtual Canvas - Painting in the Digital Realm">
                     <figcaption><span class="exhibit-title">Virtual Canvas:</span> Painting in the Digital Realm</figcaption>
                 </figure>
-            </li>
-            <li>
+            </article>
+            <article>
+                <h2 class="visually-hidden">Power Play</h2>
                 <figure class="exhibit-card">
                     <img src="images/exhibitions-2/exhibit-3.jpg" alt="Power Play - The Science of Energy">
                     <figcaption><span class="exhibit-title">Power Play:</span> The Science of Energy</figcaption>
                 </figure>
-            </li>
-            <li>
+            </article>
+            <article>
+                <h2 class="visually-hidden">Luminous Motion</h2>
                 <figure class="exhibit-card">
                     <img src="images/exhibitions-2/exhibit-4.jpg" alt="Luminous Motion - The Science of Light and Energy">
                     <figcaption><span class="exhibit-title">Luminous Motion:</span> The Science of Light and Energy</figcaption>
                 </figure>
-            </li>
-            <li>
+            </article>
+            <article>
+                <h2 class="visually-hidden">DinoVerse</h2>
                 <a href="dinoverse.html">
                   <figure class="exhibit-card">
-                      <img src="images/exhibitions-2/exhibit-5.jpg" alt="DinoVerse - Bringing Dinosaurs to Life">
+                      <img src="images/exhibitions-1/exhibit-dinoverse.jpg" alt="DinoVerse - Bringing Dinosaurs to Life">
                       <figcaption><span class="exhibit-title">DinoVerse:</span>Bringing Dinosaurs to Life</figcaption>
                   </figure>
                 </a>  
-            </li>
-            <li>
+            </article>
+            <article>
+                <h2 class="visually-hidden">Radiant Wonders</h2>
                 <figure class="exhibit-card">
                     <img src="images/exhibitions-2/exhibit-6.jpg" alt="Echoes of Innovation - Revisit History">
                     <figcaption><span class="exhibit-title">Echoes of Innovation:</span>Revisit History</figcaption>
                 </figure>
-            </li>
-         </ul>
+            </article>
+        </div>
     </section>
 </main> 
 <!--Footer-->
@@ -138,5 +143,6 @@
         </nav>
     </section>
 </footer>
+<script src="/js/menu.js"></script>
 </body>
 </html>

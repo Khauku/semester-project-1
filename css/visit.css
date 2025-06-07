@@ -1,24 +1,4 @@
 
-body {
-    background-color: #FAF8F5;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-html, body {
-    overflow-x: hidden;
-}
-
-
-/* 
-====================================
-
-Welcome Section
-
-====================================
-*/ 
-
 .welcome {
     background-image: url(../images/welcome/visit.jpg);
     background-size: cover;
@@ -50,18 +30,9 @@ Welcome Section
     padding-left: 20px;    
 }
 
-.intro-text h4 {
+.intro-text h3 {
     display: none;
 }
-
-
-/* 
-====================================
-
-Main Content
-
-====================================
-*/  
 
 .visit-holder {
     display: grid;
@@ -80,7 +51,6 @@ Main Content
 }
 
 /* Ticket Prices */
-
 .ticket-prices {
     font-family: "Instrument Sans", sans-serif;
     grid-area: ticket-prices;
@@ -140,7 +110,6 @@ Main Content
 }
 
 /* Ticket Info for Family and Children */
-
 .ticket-info-family {
     font-family: "Instrument Sans", sans-serif;
     grid-column: 1 / span 2;
@@ -172,14 +141,7 @@ Main Content
     line-height: 2;
 }
 
-/* 
-====================================
-
-Right Column
-
-====================================
-*/ 
-
+/* right column */
 .right-panel {
     font-family: "Instrument Sans", sans-serif;
     grid-area: panel;
@@ -195,13 +157,12 @@ Right Column
 }
 
 
-.panel-item-1 h3,
-.panel-item-2 h3 {
+.panel-title {
     font-size: 16px;
     font-weight: 100;
 }
 
-.panel-item-2 h3 {
+.panel-item-2 .panel-title {
     margin-bottom: 20px;
 }
 
@@ -215,7 +176,6 @@ Right Column
 }
 
 /* Clock & Map Icons */
-
 .panel-item-1 i,
 .panel-item-2 i {
     font-size: 17px;
@@ -253,7 +213,6 @@ Right Column
 }
 
 /* CTA Buttons */
-
 .cta-visit-buttons {
     display: flex;
     flex-direction: column;
@@ -300,7 +259,6 @@ Right Column
 }
 
 /* Info Cards - Cafe and Accessibility */
-
 .info-cards {
     font-family: "Instrument Sans", sans-serif;
     grid-area: info-cards;
@@ -317,7 +275,7 @@ Right Column
     box-sizing: border-box;
 }
 
-.info-cards h4 {
+.info-cards h3 {
     font-size: 20px;
     margin-bottom: -10px;
     text-transform: uppercase;
@@ -348,7 +306,6 @@ Right Column
 
 
 /* Final Ticket Information */ 
-
 .ticket-info {
     font-family: "Instrument Sans", sans-serif;
     grid-area: ticket-info;
@@ -357,7 +314,7 @@ Right Column
     padding-left: 20px;
 }
 
-.ticket-info h4 {
+.ticket-info h3 {
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -373,255 +330,9 @@ Right Column
     line-height: 1.5;
 }
 
-/* Plan your visit Image Scroll */ 
-
-h5 {
-    font-family: "Instrument Sans", sans-serif;
-    font-size: 25px;
-    text-transform: uppercase;
-    max-width: 100%;
-    margin-top: 50px;
-    margin-bottom: -10px;
-    padding-left: 25px;
-}
-
-figure {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-.plan-visit-container figcaption {
-    text-align: center;
-    font-family: "Instrument Sans", sans-serif;
-    align-items: center;
-    font-size: 25px;
-    font-weight: 600;
-    color: #000;
-    text-transform: uppercase;
-}
-
-.plan-visit-container {
-    padding-left: 55px;
-    display: block;
-    text-align: left;
-    position: static;
-    background-color: #F2F1EB;
-    padding: 10px;
-}
-
-.plan-visit-scroll-container figure img {
-    transition: filter 0.5s ease-in-out;
-    width: 532px;
-    height: 448px;  
-    padding: 10px;
-    position: static;
-    text-decoration: none;
-}
-
-.plan-visit-container a img.plan-visit-1 {
-    width: 500px;
-    height: 448px;  
-    padding: 10px;
-    position: static;
-    text-decoration: none;
-}
-
-figure img:hover,
-figure a img.plan-visit-1:hover {
-    filter: brightness(70%)
-}
-
-a:visited,
-a:link {
-    text-decoration: none;
-    color: inherit;
-}
-
-.plan-visit-scroll-container  {
-    display: flex;
-    overflow-x: auto;
-    padding: 10px;
-    margin-bottom: 60px;
-}
-
-
-/* 
-====================================
-
-Footer
-
-====================================
-*/ 
-
-footer {
-    background-color: #010101;
-    min-height: auto;
-    display: block;
-}
-
-.footer-container {
-    font-family: "Instrument Sans", sans-serif;
-    display: grid;
-    grid-template-areas: 
-    "hours location museum-info"
-    "contact follow museum-info";
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: auto;
-    gap: 20px 40px;
-    padding: 20px 45px;
-    align-items: start;
-    margin-left: 30px;
-}
-
-.footer-hours {
-    grid-area: hours;
-}
-
-.footer-contact {
-    grid-area: contact;
-}
-
-.footer-museum-info {
-    grid-area: museum-info;
-}
-
-.footer-location {
-    grid-area: location;
-}
-
-.footer-follow {
-    grid-area: follow;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-
-/* Footer texts */ 
-.footer-hours,
-.footer-contact,
-.footer-location {
-    color: #CCCBD6;
-    font-size: 17px;
-    line-height: 2;
-    font-weight: 100;
-}
-
-/* Footer Headings */
-.footer-hours h6,
-.footer-contact h6,
-.footer-location h6  { 
-    color: #E6E6E8;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: -15px;
-}
-
-.footer-museum-info h6 {
-    color: #E6E6E8;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: -5px;
-    padding-top: 10px;
-}
-
-.footer-follow h6 {
-    color: #E6E6E8;
-    font-size: 20px;
-    font-weight: 500;
-    margin-bottom: 10px;
-}
-
-/* The Museum - Info Links */ 
-.museum-info-links {
-    color: #E6E6E8;
-    font-size: 17px;
-}
-
-.museum-info-links ul li {
-    text-decoration: none;
-    list-style: none;
-    position: relative;
-    right: 38px;
-    line-height: 2;
-}
-
-.museum-info-links a:visited,
-.museum-info-links a:link,
-.footer-follow a:visited,
-.footer-follow a:link {
-    color: #E6E6E8;
-    text-decoration: none;
-}
-
-.museum-info-links a:hover,
-.footer-follow a:hover {
-    color: #848293;
-    text-decoration: none;
-}
-
-/* Sign up for newsletter link */
-.footer-follow a {
-    color: #E6E6E8;
-    font-size: 15px;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-/* Social Media Icons */
-.footer-follow-icons {
-    display: flex;
-    white-space: nowrap;
-}
-
-.fa-tiktok,
-.fa-instagram,
-.fa-x-twitter {
-    font-size: 20px;
-    color: #E6E6E8;
-    padding: 5px;
-}
-
-
 /* Large tablets and small laptops */
 @Media (max-width: 1280px) and (min-width: 768px)  {
-
-    .logo {
-        position: relative;
-        height: 60px;
-        width: auto;
-    }
-    
-    .menu {
-        display: none;
-    }
-
-     /* Dropdown Menu */ 
-
-     .dropdown-section {
-        display: block;
-    }
-
-    .dropdown-menu-icon {
-        position: relative;
-        top: 20px;
-    }
-   
-    .search-bar-position {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        position: relative;
-        color: #F7F4F1;
-        font-size: 27px;
-        right: 90px;
-        top: -5px;
-    }
-
     /* Main */ 
-
     .visit-holder {
         grid-template-areas: 
         "ticket-prices"
@@ -642,7 +353,6 @@ footer {
     }
 
     /* Ticket Prices Column */
-
     .ticket-prices {
         gap: 30px;
         padding: 20px;
@@ -667,7 +377,6 @@ footer {
 
 
     /* Right Panel */
-
     .right-panel {
         grid-area: panel;
         display: flex;
@@ -715,7 +424,6 @@ footer {
 
 
     /* CTA Buttons */
-
     .cta-visit-buttons {
         display: flex;
         order: -1;
@@ -740,66 +448,10 @@ footer {
         display: inline-block;
         width: 100%;
     }
-
-    /* Footer */ 
-
-    /* Footer Headings */
-    .footer-hours h6,
-    .footer-contact h6,
-    .footer-location h6,
-    .footer-museum-info h6,
-    .footer-follow h6 {
-        font-size: 16px;
-    }
-
-    /* Footer Texts */ 
-    .footer-hours,
-    .footer-contact,
-    .footer-location,
-    .museum-info-links li,
-    .footer-follow a {
-        font-size: 14px;
-    }
 }
 
 /* Tablets and large phones */
 @Media (max-width: 768px) and (min-width: 480px) {
-
-    /* Header */
-    .menu {
-        display: none;
-    }
-
-    /* Dropdown Menu */ 
-    .dropdown-section {
-        display: block;
-    }
-
-    .dropdown-menu-icon {
-        position: relative;
-        top: 20px;
-    }
-   
-    .search-bar-position {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        position: relative;
-        color: #F7F4F1;
-        font-size: 27px;
-        right: 90px;
-        top: -5px;
-    }
-
-    .logo {
-        position: relative;
-        height: 60px;
-        width: auto;
-    }
-
-    /* Welcome Content */
-
     .welcome {
         height: calc(50vh - 90px);
     }
@@ -810,7 +462,6 @@ footer {
      }
 
     /* Main */ 
-
     .visit-holder {
         grid-template-areas: 
         "ticket-prices"
@@ -827,7 +478,6 @@ footer {
     }
 
     /* Ticket Prices */
-
     .ticket-prices {
         grid-area: ticket-prices;
         display: flex;
@@ -853,7 +503,6 @@ footer {
 
 
     /* Ticket Info for Family and kids */ 
-
     .ticket-info-family {
         font-size: 20px;
         align-items: flex-start;
@@ -866,7 +515,6 @@ footer {
     }
 
     /* CTA Buttons - Buy Tickets & Exhibitions */ 
-
     .cta-visit-buttons {
         display: flex;
         order: -1;
@@ -898,7 +546,6 @@ footer {
 
 
     /* Right Panel */
-
     .right-panel {
         grid-area: panel;
         display: flex;
@@ -937,92 +584,10 @@ footer {
         white-space: normal;
         padding-left: 20px;
     }
-
-
-    /* Footer */ 
-    .footer-container {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-    }
-
-    /* Social Media Icons */ 
-    .fa-tiktok,
-    .fa-instagram,
-    .fa-x-twitter {
-        font-size: 15px;
-    }
-
-    .footer-follow-icons {
-        justify-content: flex-start;  
-    }
-
-    /* Footer Headings */ 
-    .footer-contact h6,
-    .footer-location h6,
-    .footer-museum-info h6,
-    .footer-follow h6 {
-        font-size: 13px;
-    }
-
-    /* Footer Headings */ 
-    .footer-hours h6,
-    .footer-contact h6,
-    .footer-location h6 {
-        font-size: 13px;
-        margin-bottom: 3px;
-    }
-
-    /* Footer Texts */ 
-    .footer-contact,
-    .footer-location,
-    .museum-info-links li,
-    .footer-follow a {
-        font-size: 12px;
-    }
-
-    .footer-hours {
-        font-size: 10px;
-        white-space: nowrap;
-    }
-
 }
 
 /* Media Iphone 14 Pro Max and smaller tablets */ 
 @media (max-width: 480px) {
-
-     /* Header */
-    .menu {
-        display: none;
-    }
-
-    /* Dropdown Menu */ 
-    .dropdown-section {
-        display: block;
-    }
-
-    .dropdown-menu-icon {
-        position: relative;
-        top: 20px;
-    }
-   
-    .search-bar-position {
-        display: none;
-    }
-
-    .fa-magnifying-glass {
-        position: relative;
-        color: #F7F4F1;
-        font-size: 27px;
-        right: 90px;
-        top: -7px;
-    }
-
-    .logo {
-        position: relative;
-        height: 60px;
-        width: auto;
-    }
-
     .welcome {
         height: calc(40vh - 90px);
     }
@@ -1032,7 +597,6 @@ footer {
     }
 
     /* Main */
-
     .visit-holder {
         grid-template-areas: 
         "ticket-prices"
@@ -1049,7 +613,6 @@ footer {
     }
 
     /* Ticket Prices */
-
     .ticket-prices {
         grid-area: ticket-prices;
         display: flex;
@@ -1073,9 +636,7 @@ footer {
         margin-left: 0;
     }
 
-
     /* Ticket Info Family */ 
-
     .ticket-info-family {
         font-size: 16px;
         align-items: flex-start;
@@ -1088,7 +649,6 @@ footer {
     }
 
     /* CTA Buttons - Buy Tickets & Exhibitions */ 
-
     .cta-visit-buttons {
         display: flex;
         order: -1;
@@ -1117,9 +677,7 @@ footer {
         display: none;
     }
 
-
     /* Right Panel */
-
     .right-panel {
         grid-area: panel;
         display: flex;
@@ -1158,7 +716,6 @@ footer {
     }
 
     /* Clock and Map Icon */
-
     .fa-clock {
         padding-bottom: 10px;
         padding-left: 20px;
@@ -1174,7 +731,6 @@ footer {
     }
 
     /* Plan your visit */
-
     .plan-visit-container img {
         width: 332px;
         height: 248px;
@@ -1184,71 +740,4 @@ footer {
         width: 275px;
         height: 248px;  
     }
-
-    /* Footer */ 
-
-    .footer-container {
-        grid-template-columns: 1fr;
-        grid-auto-rows: auto;
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-        padding: 0 10px;
-        box-sizing: border-box;
-    }
-
-    /* Social Media Icons */ 
-    .fa-tiktok,
-    .fa-instagram,
-    .fa-x-twitter {
-        font-size: 15px;
-    }
-
-
-    .footer-follow-icons {
-        justify-content: flex-start;
-    
-    }
-
-    /* Footer Headings */ 
-    .footer-contact h6,
-    .footer-location h6,
-    .footer-museum-info h6,
-    .footer-follow h6 {
-        font-size: 13px;
-    }
-
-    .footer-hours h6,
-    .footer-contact h6,
-    .footer-location h6 {
-        font-size: 13px;
-    }
-
-    /* Footer Texts */ 
-    .footer-contact,
-    .footer-location,
-    .museum-info-links li,
-    .footer-follow a {
-        font-size: 12px;
-    }
-
-    .footer-contact, 
-    .footer-follow , 
-    .footer-follow-icons {
-        margin-top: -20px;
-    }
-
-    .footer-hours p {
-        font-size: 10px;
-    }
-
-    .footer-hours h6 {
-        white-space: nowrap;
-        margin-bottom: 2px;
-    }
-
-    .footer-museum-info {
-        margin-top: -5px;
-    }
-
 }

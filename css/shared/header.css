@@ -30,7 +30,6 @@ header {
 }
 
 /* Menu */
-
 .menu {
     font-family: "Instrument Sans", sans-serif;
     font-size: 17px;
@@ -65,7 +64,6 @@ header {
 }
 
 /* Search Bar */
-
 .search-bar {
     background-color: #010101;
     border: 1px solid #B3ABAB;
@@ -94,7 +92,6 @@ header {
 }
 
 /* Dropdown Menu */
-
 .dropdown-section {
     position: relative;
     display: none;
@@ -172,4 +169,118 @@ header {
 
 .dropdown-menu-toggle:checked ~ .dropdown-menu {
     display: block;
+}
+
+/* Large tablets and small laptops */
+@Media (max-width: 1280px) and (min-width: 768px)  {
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+     /* Dropdown Menu */ 
+
+     .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+}
+
+/* Tablets and large phones */
+@Media (max-width: 768px) and (min-width: 480px) {
+
+    /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -5px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+    }
+
+}
+
+/* Media Iphone 14 Pro Max and smaller tablets */ 
+@media (max-width: 480px) {
+
+     /* Header */
+    .menu {
+        display: none;
+    }
+
+    /* Dropdown Menu */ 
+    .dropdown-section {
+        display: block;
+    }
+
+    .dropdown-menu-icon {
+        position: relative;
+        top: 20px;
+    }
+   
+    .search-bar-position {
+        display: none;
+    }
+
+    .fa-magnifying-glass {
+        position: relative;
+        color: #F7F4F1;
+        font-size: 27px;
+        right: 90px;
+        top: -7px;
+    }
+
+    .logo {
+        position: relative;
+        height: 60px;
+        width: auto;
+        margin-left: -1rem;
+    }
+ 
 }

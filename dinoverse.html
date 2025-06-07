@@ -6,16 +6,17 @@
     <!--Metadata-->
     <title>DinoVerse: Explore prehistoric World of DinoVerse! | Community Science Museum</title>
     <meta name="description" content="Step in to the world of DinoVerse. Experience fossil digs, dinosaur sounds, VR safaris and interactive exhibits that brings dinosaurs to life. Perfect for all ages">
-    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
+    <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&display=swap" rel="stylesheet">
+    <!--Font awesome Icons-->
+    <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
     <!--Stylesheets-->
-    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/dinoverse.css" rel="stylesheet">
 </head>
 <body>
-<!---Community Science Museum Logo - Menu-->
 <header>
     <a href="index.html">
         <img src="images/logo.jpg" alt="Community Science Museum logo" class="logo">
@@ -29,16 +30,15 @@
         </ul>
     </nav>
     <div class="search-bar-position" role="search" aria-label="search the site">
-        <input type="text" class="search-bar" placeholder="Search">
+        <label for="site-search" class="visually-hidden">Search the site</label>
+        <input type="text" id="site-search" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
     <nav class="dropdown-section" aria-label="Mobile menu">
-        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
-        <label for="menu-toggle" class="dropdown-menu-icon">
-            <span></span>
-            <span></span>
-            <span></span>
+        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle" aria-controls="dropdown-menu" aria-expanded="false">
+        <label for="menu-toggle" class="dropdown-menu-icon" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
             <li><a href="visit.html">Visit</a></li>
@@ -58,7 +58,7 @@
             <h2><span class="opening-dinoverse-highlight">DinoVerse:</span> Bringing Dinosaurs to Life</h2>
             <p>Step back in time and explore the incredible world of dinosaurs at DinoVerse! This immersive exhibit brings the prehistoric era to life with fascinating displays and interactive experiences, and life-sized dinosaur recreations. See T-Rex, uncover hidden fossils, and dive into the mysteries of a time when giants roamed the Earth. Perfect for adventurers of all ages, DinoVerse offers a journey millions of years old.</p>
         </div>
-    <!--Right Column - CTA & Info-->
+        <!--Right Column - CTA & Info-->
         <aside class="sidebar">
             <div class="sidebar-info-list">
                 <button class="cta">Buy tickets</button>
@@ -66,7 +66,7 @@
                     <li>• Suitable for everyone</li>
                     <li>• Drop in </li>
                 </ul>
-                <h3>Open Hours</h3>
+                <p class="panel-title">Open Hours</p>
                 <p>
                     <span class="open-hours-highlight">Thursday :</span>  10:00 - 18.00<br>
                     <span class="open-hours-highlight">Friday - Saturday :</span> 09:00 - 20.00<br>
@@ -76,21 +76,21 @@
         </aside>
         <!--To Do at DinoVerse-->
         <section class="exhibits">
-            <h4>Exhibits at DinoVerse</h4>
+            <h3 class="visually-hidden">Exhibits at DinoVerse</h3>
             <article class="exhibit-item">
-                <h5>Fossil Dig Zone:</h5>     
+                <h4>Fossil Dig Zone:</h4>     
                 <p>Channel your inner paleontologist and uncover hidden fossils in our<br>excavation pit. Experience the thrill<br>of discovery as you dig, sift, just like<br>a real paleontologist!</p>
             </article>
             <article class="exhibit-item">
-                <h5>Dinosaur Sounds:</h5>
+                <h4>Dinosaur Sounds:</h4>
                 <p>Hear what dinosaurs may have sounded like through cutting-<br>edge sound reconstructions.<br>Immerse yourself in their world by<br>experiencing the roars.</p>
             </article>
             <article class="exhibit-item">
-                <h5>Dino Anatomy:</h5>
+                <h4>Dino Anatomy:</h4>
                 <p>Explore the biology of dinosaurs with interactive models showing<br>how these ancient creatures lived,<br>moved, and hunted.</p>
             </article>
             <article class="exhibit-item">
-                <h5>Virtual Dino Safari:</h5>
+                <h4>Virtual Dino Safari:</h4>
                 <p>Use VR technology to walk<br>alongside dinosaurs in their natural<br>habitats and witness their world like<br>never before.</p>
             </article>
         </section>  
@@ -146,5 +146,6 @@
         </nav>
     </section>
 </footer> 
+<script src="/js/menu.js"></script>
 </body>
 </html>

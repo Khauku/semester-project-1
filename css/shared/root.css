@@ -1,0 +1,12 @@
+
+:root {
+    --clr-dark: #000;
+    --clr-light: #F9F7F5;
+    --font-main: "Instrument Sans", sans-serif;
+    --font-size-heading: clamp(2rem, 5vh, 3.5rem);
+    --font-size-sub: clamp(1rem, 2.5vh, 1.5rem);
+    --font-size-small: 0.95rem;
+    --section-padding: 3rem 2rem;
+    --gap: 1.5rem;
+    --border-radius: 4px;
+}

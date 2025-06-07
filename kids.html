@@ -14,13 +14,15 @@
     <!--Font Awesome Icons-->
     <script src="https://kit.fontawesome.com/d10e164dbb.js" crossorigin="anonymous"></script>
     <!--Stylesheets-->
-    <link href="css/header.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
     <link href="css/kids.css" rel="stylesheet">
 </head>
 <body>
 <!---Community Science Museum Logo - Menu-->
 <header>
-    <a href="index.html"><img src="images/logo.jpg" alt="Community Science Museum logo" class="logo"></a>
+    <a href="index.html">
+        <img src="images/logo.jpg" alt="Community Science Museum logo" class="logo">
+    </a>
     <nav class="menu" aria-label="Main menu">
         <ul>
             <li><a href="visit.html">Visit</a></li>
@@ -30,13 +32,14 @@
         </ul>
     </nav>
     <div class="search-bar-position" role="search" aria-label="search the site">
-        <input type="text" class="search-bar" placeholder="Search">
+        <label for="site-search" class="visually-hidden">Search the site</label>
+        <input type="text" id="site-search" class="search-bar" placeholder="Search">
         <i class="fa-solid fa-magnifying-glass"></i>
     </div>
     <!--Dropdown menu for smaller sizes-->
     <nav class="dropdown-section" aria-label="Mobile menu">
-        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle">
-        <label for="menu-toggle" class="dropdown-menu-icon">
+        <input type="checkbox" id="menu-toggle" class="dropdown-menu-toggle" aria-controls="dropdown-menu" aria-expanded="false">
+        <label for="menu-toggle" class="dropdown-menu-icon" aria-label="Toggle menu">
             <span></span><span></span><span></span>
         </label>
         <ul class="dropdown-menu">
@@ -48,61 +51,52 @@
         <i class="fa-solid fa-magnifying-glass"></i>
     </nav>
 </header> 
-<main>
-    <section class="welcome">
-        <h1>Kids / School Trips</h1>
+<main aria-label="Information for school and class trips to the Science Museum">
+    <section class="welcome" aria-labelledby="page-title">
+        <h1 id="page-title">Kids / School Trips</h1>
     </section>
     <!--Plan Class Trip-->
     <section class="grid-box">
         <div class="welcome-content">
-            <h2>Plan Your Class Trip to the <span class="welcome-title-highlight">Science Museum</span></h2>
-            <p>
-                At the Science Museum, we're passionate about inspiring curiosity and bringing science to life for students of all ages. A visit to our museum is an unforgettable experience that combines fun, exploration, and hands-on learning. Interactive exhibits and captivating demonstrations to immersive workshops and technology.
-            </p>
+            <h2>Plan Your Class Trip to the<br> <span class="welcome-title-highlight">Science Museum</span></h2>
+            <p>At the Science Museum, we're passionate about inspiring curiosity and bringing science to life for students of all ages. A visit to our museum is an unforgettable experience that combines fun, exploration, and hands-on learning. Interactive exhibits and captivating demonstrations to immersive workshops and technology.</p>
         </div>
         <!--Sidebar - CTA & Info-->
-        <section class="column">
+        <aside class="column" aria-label="Booking information and opening hours">
             <div class="column-list">
                 <button class="cta">Book now</button>
                 <ul>
-                    <li>
-                        <span class="book-call-highlight">Book online or Call us</span>
-                    </li>
-                    <li>
-                        <span class="phone-highlight">Phone:</span> +45 232 00 000
-                    </li>
+                    <li><strong class="book-call-highlight">Book online or Call us</strong></li>
+                    <li><strong class="phone-highlight">Phone:</strong> +45 232 00 000</li>
                 </ul>
-                <h2>Open Hours</h2>
+                <p class="open-hours-title">Open Hours</p>
                 <p>
-                    <span class="open-hours-highlight">Thursday :</span>  10:00 - 18.00<br><span class="open-hours-highlight">Friday :</span> <span class="open-hours-highlight">Saturday :</span> 09:00 - 20.00<br><span class="open-hours-highlight">Sunday :</span>  09:00- 14:00
+                    <span class="open-hours-highlight">Thursday :</span>  10:00 - 18.00<br>
+                    <span class="open-hours-highlight">Friday :</span> 
+                    <span class="open-hours-highlight">Saturday :</span> 09:00 - 20.00<br>
+                    <span class="open-hours-highlight">Sunday :</span>  09:00- 14:00
                 </p>
             </div>
-        </section>
+        </aside>
        <!--Class trip Program-->
-        <section class="program-cards">
-            <h3>Program</h3>
+        <section class="program-cards" aria-labelledby="program-heading">
+            <h2 id="program-heading">Program</h2>
             <article class="card">
-                    <h4 class="card-title">Interactive Exhibits:</h4>
-                    <p>
-                    Students can engage with over 1,000 exhibits on topics like robotics, energy, dinosaurs, and space exploration. Each exhibit is designed to spark curiosity, encourage critical thinking, and provide hands-on experiences that make science come alive.
-                    </p>
+                    <h3 class="card-title">Interactive Exhibits:</h3>
+                    <p>Students can engage with over 1,000 exhibits on topics like robotics, energy, dinosaurs, and space exploration. Each exhibit is designed to spark curiosity, encourage critical thinking, and provide hands-on experiences that make science come alive.</p>
             </article>
             <article class="card">
-                    <h4>Tailored Programs:</h4>
-                    <p>
-                        Choose from educational workshops and guided tours designed to match your curriculum. Our expert educators ensure each program is interactive, engaging, and tailored to meet the needs of diverse learning styles and grade levels.
-                    </p>
+                    <h3>Tailored Programs:</h3>
+                    <p>Choose from educational workshops and guided tours designed to match your curriculum. Our expert educators ensure each program is interactive, engaging, and tailored to meet the needs of diverse learning styles and grade levels.</p>
             </article>
             <article class="card">
-                    <h4>Exclusive Teacher Resources:</h4>
-                    <p>
-                        Download pre-visit materials, activity sheets, and post-visit challenges to enrich the learning experience. These resources are carefully crafted to help you extend the impact of your visit and seamlessly integrate museum learning into your classroom activities.
-                    </p>
+                    <h3>Exclusive Teacher Resources:</h3>
+                    <p>Download pre-visit materials, activity sheets, and post-visit challenges to enrich the learning experience. These resources are carefully crafted to help you extend the impact of your visit and seamlessly integrate museum learning into your classroom activities.</p>
             </article>
         </section> 
         <!--Experiments image scroll-->     
-        <section class="experiments">
-            <h5>Classroom experiments</h5>
+        <section class="experiments" aria-labelledby="experiments-heading">
+            <h3 id="experiments-heading">Classroom experiments</h3>
             <p>Science experiments in the classroom</p>
             <p>For children between 8-13 years old</p>
             <div class="experiment-scroll-container">
@@ -125,8 +119,8 @@
             </div>        
         </section>
         <!--Final Note-->
-        <section class="final-note">
-            <h5>Practical information</h5>
+        <section class="final-note" aria-labelledby="practical-heading">
+            <h3 id="practical-heading">Practical information</h3>
             <p>We offer a variety of pre-planned trips designed to maximize learning and engagement for students.<br>Each trip includes interactive exhibits, hands-on activities, and opportunities to explore science in exciting ways.<br>Trips are available on weekdays, with flexible timings and options for group sizes. Teachers can access<br>tailored resources to enhance the visit and make planning a breeze.</p>
             <p><span class="ready-to-book">Ready to book? Contact us to discuss availability and customization<br>options for your group!</span></p>
         </section>
@@ -136,20 +130,20 @@
 <footer>
     <section class="footer-container">
         <div class="footer-hours">
-            <h6>Opening Hours</h6>
+            <h4>Opening Hours</h4>
             <p>
-                Tuesday : Thursday 10:00 - 18.00<br>Friday : Saturday 09:00 - 20.00<br>Sunday: 09:00- 14:00
+                Tuesday : Thursday 10:00 - 18.00<br>
+                Friday : Saturday 09:00 - 20.00<br>
+                Sunday: 09:00- 14:00
             </p>
         </div>
         <div class="footer-contact">
-            <h6>Contact</h6>
-            <p>
-                CSM@info.com<br>Phone: +45 232 00 000
-            </p>
+            <h4>Contact</h4>
+            <p>CSM@info.com<br>Phone: +45 232 00 000</p>
         </div>
         <div class="footer-museum-info">
-            <h6>The Museum</h6>
-            <nav class="museum-info-links">
+            <h4>The Museum</h4>
+            <nav class="museum-info-links" aria-label="Museum Information">
                 <ul>
                     <li><a href="index.html">Vacancies</a></li>
                     <li><a href="index.html">Annual Reports</a></li>
@@ -162,19 +156,20 @@
             </nav>
         </div>
         <div class="footer-location">
-            <h6>Location</h6>
+            <h4>Location</h4>
             <p>Comunity Science Museum<br>Himmelveien 20<br>0512 Oslo</p>
         </div>
-        <div class="footer-follow">
-            <h6>Follow us:</h6>
+        <nav class="footer-follow" aria-label="follow us section">
+            <h4>Follow us:</h4>
             <a href="index.html">Sign up for newsletters</a>
-            <div class="footer-follow-icons">
-                <i class="fa-brands fa-tiktok"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-x-twitter"></i>
-            </div>
-        </div>
+            <ul class="footer-follow-icons">
+                <li><a href="#" aria-label="Follow us on TikTok"><i class="fa-brands fa-tiktok"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#" aria-label="Follow us on Twitter"><i class="fa-brands fa-x-twitter"></i></a></li>
+            </ul>
+        </nav>
     </section>
-</footer> 
+</footer>
+<script src="/js/menu.js"></script> 
 </body>
 </html>
